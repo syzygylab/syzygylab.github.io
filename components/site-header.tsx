@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/static-link';
 
 const navigation = [
   { href: '/', label: 'Home' },

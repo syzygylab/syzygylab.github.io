@@ -1,5 +1,4 @@
 'use client';
 import {useEffect} from 'react';
-import {usePathname} from 'next/navigation';
 import {track} from '@/lib/analytics';
-export function AnalyticsProvider(){const path=usePathname();useEffect(()=>{void track('$pageview',{page:path});},[path]);return null;}
+export function AnalyticsProvider(){useEffect(()=>{void track('$pageview',{page:window.location.pathname});},[]);return null;}

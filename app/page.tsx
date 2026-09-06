@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/static-link';
 import { ArrowRight, Check, HeartHandshake } from 'lucide-react';
 
 export const dynamic = 'force-static';
