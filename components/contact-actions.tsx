@@ -1,0 +1,3 @@
+'use client';
+import {track} from '@/lib/analytics';
+export function ContactActions(){return <ul className="contact-list"><li><strong>Email <span className="placeholder-label">Placeholder</span></strong><a className="contact-action" href="mailto:hello@abctutoring.example" onClick={()=>void track('contact_action',{contact_method:'email'})}>hello@abctutoring.example</a></li><li><strong>Phone <span className="placeholder-label">Placeholder</span></strong><a className="contact-action" href="tel:+12025550123" onClick={()=>void track('contact_action',{contact_method:'phone'})}>(202) 555-0123</a></li></ul>;}
